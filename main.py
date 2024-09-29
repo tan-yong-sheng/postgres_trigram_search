@@ -8,7 +8,6 @@ from schemas import StockSymbolReturn
 search_term = "genting malaysia"
 exchange_market = "Bursa"
 
-
 # Create the tables in database
 Base.metadata.create_all(engine)
 
