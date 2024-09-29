@@ -6,7 +6,7 @@
 
 2. `docker compose up -d`
 
-3. 
+3. Activate virtual environment:
 
 ```bash
 python -m virtualenv .venv
