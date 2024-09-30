@@ -1,10 +1,15 @@
 ## Building Trigram Search for Stock Tickers with Python SQLAlchemy and PostgreSQL
 
-(Note: Please read the setup guide at https://www.tanyongsheng.com/note/building-trigram-search-for-stock-tickers-with-python-sqlalchemy-and-postgresql/ for more details, and please rename `.env.sample` to `.env`)
+Coding environment: Linux in Github Codespaces
+(Note: Please read the setup guide at https://www.tanyongsheng.com/note/building-trigram-search-for-stock-tickers-with-python-sqlalchemy-and-postgresql/ for more details)
 
 1. `git clone https://github.com/tan-yong-sheng/postgres_trigram_search.git`
 
-2. `docker compose up -d`
+2. start database container
+```
+mv .env.sample .env
+docker compose up -d
+```
 
 3. Activate virtual environment:
 
