@@ -19,7 +19,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-4. `python -m models.py`
+4. `python -m models`
 
 5. `python -m scrape_tickers`
 
