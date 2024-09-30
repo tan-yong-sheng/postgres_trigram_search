@@ -23,19 +23,19 @@ class StockSymbolOrm(Base):
             "idx_stock_symbol_trgm",
             "stock_symbol", # index for trigram search on stock_symbol field
             postgresql_using="gist",
-            postgresql_ops={"stock_symbol": "gist_trgm_ops"},
+            postgresql_ops={"stock_symbol": "gist_trgm_ops(siglen=256)"},
         ),
         Index(
             "idx_stock_code_trgm",
             "stock_code", # index for trigram search on stock_code field
             postgresql_using="gist",
-            postgresql_ops={"stock_code": "gist_trgm_ops"},
+            postgresql_ops={"stock_code": "gist_trgm_ops(siglen=256)"},
         ),
         Index(
             "idx_company_name_trgm",
             "company_name",  # index for trigram search on company_name field
             postgresql_using="gist",
-            postgresql_ops={"company_name": "gist_trgm_ops"},
+            postgresql_ops={"company_name": "gist_trgm_ops(siglen=256)"},
         ),
     )
 
