@@ -42,4 +42,5 @@ class StockSymbolOrm(Base):
 
 if __name__ == "__main__":
     # Create the tables in database
-    Base.metadata.create_all()
+    from db_connection import engine
+    Base.metadata.create_all(engine)
