@@ -5,7 +5,7 @@ from db_connection import Base
 
 # Define the stock_symbol table
 class StockSymbolOrm(Base):
-    __tablename__ = "stocks"
+    __tablename__ = "stock_symbols"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     stock_symbol = Column(String)
