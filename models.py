@@ -21,21 +21,21 @@ class StockSymbolOrm(Base):
         UniqueConstraint("stock_symbol", "exchange", name="uq_stock_symbol_exchange"),
         Index(
             "idx_stock_symbol_trgm",
-            "stock_symbol",
-            postgresql_using="gin",
-            postgresql_ops={"stock_symbol": "gin_trgm_ops"},
+            "stock_symbol", # index for trigram search on stock_symbol field
+            postgresql_using="gist",
+            postgresql_ops={"stock_symbol": "gist_trgm_ops"},
         ),
         Index(
             "idx_stock_code_trgm",
-            "stock_code",  # index for trigram search on multiple fields
-            postgresql_using="gin",
-            postgresql_ops={"stock_code": "gin_trgm_ops"},
+            "stock_code", # index for trigram search on stock_code field
+            postgresql_using="gist",
+            postgresql_ops={"stock_code": "gist_trgm_ops"},
         ),
         Index(
             "idx_company_name_trgm",
-            "company_name",  # index for trigram search on multiple fields
-            postgresql_using="gin",
-            postgresql_ops={"company_name": "gin_trgm_ops"},
+            "company_name",  # index for trigram search on company_name field
+            postgresql_using="gist",
+            postgresql_ops={"company_name": "gist_trgm_ops"},
         ),
     )
 
