@@ -26,7 +26,7 @@ pip install -r requirements.txt
 Please feel free to adjust the parameters `search_term` or `exchange_market` in main.py file
 
   - search_term: str
-  - exchange_market: enum('Bursa', 'SGD)
+  - exchange_market: enum('Bursa', 'SGX')
 
 
 This is just a simple prototype project. Thanks for reading, and hope for more suggestions.
