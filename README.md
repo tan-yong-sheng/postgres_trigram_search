@@ -39,4 +39,4 @@ This is just a simple prototype project. Thanks for reading, and hope for more s
 
 ## Tips
 
-Besides Github Codespaces, you could also try to use GitPod so you could start your coding environment very quickly: https://gitpod.io/#https://github.com/tan-yong-sheng/postgres_trigram_search (Note: I'm not affiliate with GitPod)
+Besides Github Codespaces, you could also try to use GitPod so you could start your coding environment very quickly: https://gitpod.io/#https://github.com/tan-yong-sheng/postgres_trigram_search (Note: I'm not affiliate with GitPod, and the free plan gives you 50 hours per month at no cost as of 30 Sep 2024.)
